@@ -8,8 +8,7 @@ var script = require('./scripts/main.js');
 var job = new CronJob({
     cronTime: '0 * * * * *',
     onTick: function () {
-        console.log(this.msg);
-        console.log('Executing script... Result is: ' + script.execute());
+        console.log('Executing script... Result is: ' + script.execute(this));
     },
     start: false,
     timeZone: 'Europe/Paris',

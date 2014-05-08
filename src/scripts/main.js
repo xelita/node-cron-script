@@ -1,5 +1,4 @@
-var result;
-
-exports.execute = function () {
+exports.execute = function (context) {
+    console.log(context.msg);
     return true;
 };
