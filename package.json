@@ -1,7 +1,7 @@
 {
     "name": "node-cron-script",
     "version": "1.0.0",
-    "description": "Node based program which executes a JS script periodically.",
+    "description": "Node based program which executes an external JS script periodically.",
     "homepage": "https://github.com/xelita/node-cron-script",
     "repository": {
         "type": "git",
@@ -18,14 +18,13 @@
     "license": "MIT",
     "main": "src/server.js",
     "devDependencies": {
-        "karma": "~0.12.14",
-        "karma-jasmine": "~0.1.5",
-        "karma-phantomjs-launcher": "~0.1.4"
+        "jasmine-node": "^1.14.3"
     },
     "dependencies": {
         "cron": "~1.0.4",
         "time": "~0.10.0"
     },
     "scripts": {
+        "test": "node_modules/jasmine-node/bin/jasmine-node test"
     }
 }
